@@ -1,3 +1,10 @@
+body { 
+  background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .clear {
 	clear:both;
 }
@@ -9,8 +16,8 @@ a:hover {
     font-style: italic;
     position: relative;
     border-radius: 100%;
-    background: #f84342;
-    border: 1px solid #F7F7F7;
+    background: #D62B3F;
+    border: 1px solid #ddd;
     width: 80px;
     height: 80px;
     margin: 10px 10px;
@@ -32,14 +39,15 @@ a:hover {
 	padding-top: 15px;
 }
 .links a {
-	color: black;
+	color: #D62B3F;
 	font-size: 25px;
-	border-bottom: 1px solid #dfdfdf;
+	border-bottom: 2px solid #ddd;
 	font-family: 'source_sans_probold';
 	text-transform: uppercase;
 }
 .links a:hover {
-	color: #D62B3F
+	color: #ddd;
+	border-bottom: 2px solid #D62B3F;
 }
 header {
   border-top: 9px solid #222222;
@@ -59,7 +67,7 @@ h2 {
 	font-family: 'source_sans_proregular';
 	font-size: 20px;
 }
-.next-quote:hover {
+.next-quote:hover, .footer-blurb a:hover {
 	color: #ddd;
 }
 .footer a {
@@ -70,6 +78,7 @@ h2 {
 	font-style: italic;
 	text-align:right;
  	font-size:10px;
+ 	color: #dddddd;
 }
 .alert {
 	clear: both;
@@ -89,6 +98,9 @@ h2 span {
 }
 ::selection {
   background-color: #D62B3F;
+}
+.splurty-number {
+	margin-bottom: 45px;
 }
 @media (max-width: 750px) {
   .footer-blurb {
